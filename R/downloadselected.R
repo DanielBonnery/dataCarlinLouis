@@ -14,7 +14,9 @@ ddCLGeneric<-function(url,variablenames=NULL,...){
   toto}
 
 
-
+#'
+#'@examples
+#'aspirin<-ddCL_aspirin()
 ddCL_aspirin<-function(){  
   ddCLGeneric(url="https://www.counterpointstat.com/uploads/1/1/9/3/119383887/aspirin_data.txt",
                                  variablenames=c("patient","X","Y"),
