@@ -92,7 +92,6 @@ plyr::aaply(yy,1,function(x){
 dodo("_bugs","_bugs","txt","inst")
 dodo("_r","","R","R")
 dodo("_data","_data","txt","inst")
-))
+}
 
-z<-basename(y)
 
