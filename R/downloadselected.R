@@ -22,4 +22,12 @@ ddCL_aspirin<-function(){
                                  variablenames=c("patient","X","Y"),
                                  sep = "\t",header=FALSE)}
 
+#'
+#'@examples
+#'aspirin<-ddCL_aspirin()
+ddCL_land<-function(){  
+  land<-ddCLGeneric(url="https://www.counterpointstat.com/uploads/1/1/9/3/119383887/land_data.txt",
+              sep = " ",header=TRUE)
+  cbind(data.frame(property=1:nrow(land)),land)
+  }
 
