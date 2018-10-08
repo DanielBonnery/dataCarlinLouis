@@ -45,3 +45,11 @@ ddCL_tax<-function(){
   names(tax)<-c("Y","X")
   tax}
 
+#'coal<-ddCL_coal()
+ddCL_coal<-function(){  
+  coal<-read.fwf("https://www.counterpointstat.com//uploads/1/1/9/3/119383887/coal_data.txt", widths=c(4,3),header=FALSE)
+  names(coal)<-c("Year","Count")
+  coal}
+
+
+
