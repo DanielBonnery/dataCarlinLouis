@@ -37,3 +37,11 @@ ddCL_puro<-function(){
   puro<-read.fwf("https://www.counterpointstat.com/uploads/1/1/9/3/119383887/puro_data.txt",widths=c(2,13,20))
   names(puro)<-c("Case", "x","y")
   puro}
+
+
+#'tax<-ddCL_tax()
+ddCL_tax<-function(){  
+  tax<-read.csv("https://www.counterpointstat.com/uploads/1/1/9/3/119383887/tax_data.txt", sep="\t",header=FALSE)
+  names(tax)<-c("Y","X")
+  tax}
+
